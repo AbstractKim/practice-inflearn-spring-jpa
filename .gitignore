@@ -1,0 +1,68 @@
+#######################
+#### Intro project ####
+intro/HELP.md
+intro/target/
+!intro/.mvn/wrapper/maven-wrapper.jar
+!intro/**/src/main/**
+!intro/**/src/test/**
+      
+### STS ###
+intro/.apt_generated
+intro/.classpath
+intro/.factorypath
+intro/.project
+intro/.settings
+intro/.springBeans
+intro/.sts4-cache
+      
+### IntelliJ IDEA ###
+intro/.idea
+intro/*.iws
+intro/*.iml
+intro/*.ipr
+      
+### NetBeans ###
+intro/nbproject/private/
+intro/nbbuild/
+intro/dist/
+intro/nbdist/
+intro/.nb-gradle/
+introbuild/
+      
+### VS Code ###
+intro.vscode/
+
+####################################
+#### spring jap setting project ####
+spring-jpa-setting/HELP.md
+spring-jpa-setting/target/
+!spring-jpa-setting/.mvn/wrapper/maven-wrapper.jar
+!spring-jpa-setting/**/src/main/**
+!spring-jpa-setting/**/src/test/**
+      
+### STS ###
+spring-jpa-setting/.apt_generated
+spring-jpa-setting/.classpath
+spring-jpa-setting/.factorypath
+spring-jpa-setting/.project
+spring-jpa-setting/.settings
+spring-jpa-setting/.springBeans
+spring-jpa-setting/.sts4-cache
+      
+### IntelliJ IDEA ###
+spring-jpa-setting/.idea
+spring-jpa-setting/*.iws
+spring-jpa-setting/*.iml
+spring-jpa-setting/*.ipr
+      
+### NetBeans ###
+spring-jpa-setting/nbproject/private/
+spring-jpa-setting/nbbuild/
+spring-jpa-setting/dist/
+spring-jpa-setting/nbdist/
+spring-jpa-setting/.nb-gradle/
+spring-jpa-settingbuild/
+      
+### VS Code ###
+spring-jpa-setting.vscode/
+
