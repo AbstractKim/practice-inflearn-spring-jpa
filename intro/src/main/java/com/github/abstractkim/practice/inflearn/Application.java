@@ -13,7 +13,8 @@ public class Application {
 
         try(Connection connection = DriverManager.getConnection(url, userName, password)){
             System.out.println("Connection Info:" + connection);
-            String sql = "CREATE TABLE ACCOUNT (id int, username varchar(255), password varchar(255))";
+//            String sql = "CREATE TABLE ACCOUNT (id int, username varchar(255), password varchar(255))";
+            String sql = "INSERT INTO ACCOUNT  VALUES (1, 'bskim', 'pass')";
             try(PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.execute();
             }
