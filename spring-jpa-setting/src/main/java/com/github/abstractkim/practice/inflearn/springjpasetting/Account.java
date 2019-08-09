@@ -14,7 +14,7 @@ public class Account {
 
     private String password;
 
-    @OneToMany
+    @OneToMany (mappedBy = "account")
     private Set<Study> studies = new HashSet<>();
 
     @Embedded
