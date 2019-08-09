@@ -12,8 +12,7 @@ public class Study {
 
     private String name;
 
-    @ManyToOne
-    private Account account;
+
 
     public Long getId() {
         return id;
@@ -31,11 +30,4 @@ public class Study {
         this.name = name;
     }
 
-    public Account getAccount() {
-        return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
-    }
 }

@@ -30,7 +30,9 @@ public class JpaRunner implements ApplicationRunner {
 
         Study study = new Study();
         study.setName("myStudy");
-        study.setAccount(accountForSesstion);
+
+        accountForSesstion.getStudies().add(study);
+
         session.save(accountForSesstion);
         session.save(study);
 

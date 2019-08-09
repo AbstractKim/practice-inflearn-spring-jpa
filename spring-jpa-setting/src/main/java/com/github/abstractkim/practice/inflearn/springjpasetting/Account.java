@@ -1,9 +1,8 @@
 package com.github.abstractkim.practice.inflearn.springjpasetting;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Account {
@@ -14,6 +13,9 @@ public class Account {
     private String username;
 
     private String password;
+
+    @OneToMany
+    private Set<Study> studies = new HashSet<>();
 
     @Embedded
     private Address address;
@@ -40,5 +42,21 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Set<Study> getStudies() {
+        return studies;
+    }
+
+    public void setStudies(Set<Study> studies) {
+        this.studies = studies;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
