@@ -1,5 +1,6 @@
 package com.github.abstractkim.practice.inflearn.springjpasetting;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,6 +14,9 @@ public class Account {
     private String username;
 
     private String password;
+
+    @Embedded
+    private Address address;
 
     public Long getId() {
         return id;
