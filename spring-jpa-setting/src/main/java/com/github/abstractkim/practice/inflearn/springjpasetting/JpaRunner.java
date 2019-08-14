@@ -27,7 +27,15 @@ public class JpaRunner implements ApplicationRunner {
         Account accountForSesstion = new Account();
         accountForSesstion.setUsername("bskim");
         accountForSesstion.setPassword("hibernate");
+
+        Study study = new Study();
+        study.setName("myStudy");
+
+        accountForSesstion.getStudies().add(study);
+        study.setAccount(accountForSesstion);
+
         session.save(accountForSesstion);
+        session.save(study);
 
     }
 }
